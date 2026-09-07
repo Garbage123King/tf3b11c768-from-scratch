@@ -6,3 +6,4 @@ model.bin
 main.exe
 out_c.bin
 out_python.bin
+__pycache__/
