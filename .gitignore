@@ -1,0 +1,8 @@
+# model weights (too large for GitHub, >100MB)
+kata1-tf3-b11c768-s11001M-d5973M.bin.gz
+model.bin
+
+# build / run artifacts
+main.exe
+out_c.bin
+out_python.bin

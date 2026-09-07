@@ -1,0 +1,489 @@
+﻿MODEL: b11c768h12nbt3tflrs-fson-silu version=17 binfeat=22 glbfeat=19
+multipliers: [20.0, 20.0, 20.0, 20.0, 40.0, 0.25, 150.0]
+metaenc=0 flags=[0, 0, 0, 0, 0, 0, 0]
+trunk: blocks=11 c_trunk=768 c_mid=384 reg=288 gpool=96,96
+  trunkNormKind=0 unused=[0, 0, 0, 0, 0]
+  model.conv_spatial: conv 3x3 22->768 dil=1,1 (152064 floats)
+  model.linear_global: matmul 19->768
+  BLOCK 0: nested_bottleneck_block model.blocks.0 nsub=6
+    model.blocks.0.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.0.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.0.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.0.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.0.blockstack.0.q_proj: 384->384
+      model.blocks.0.blockstack.0.k_proj: 384->384
+      model.blocks.0.blockstack.0.v_proj: 384->384
+      model.blocks.0.blockstack.0.out_proj: 384->384
+      model.blocks.0.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.0.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.0.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.0.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.0.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.0.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.0.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.0.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.0.blockstack.2.q_proj: 384->384
+      model.blocks.0.blockstack.2.k_proj: 384->384
+      model.blocks.0.blockstack.2.v_proj: 384->384
+      model.blocks.0.blockstack.2.out_proj: 384->384
+      model.blocks.0.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.0.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.0.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.0.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.0.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.0.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.0.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.0.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.0.blockstack.4.q_proj: 384->384
+      model.blocks.0.blockstack.4.k_proj: 384->384
+      model.blocks.0.blockstack.4.v_proj: 384->384
+      model.blocks.0.blockstack.4.out_proj: 384->384
+      model.blocks.0.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.0.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.0.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.0.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.0.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.0.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.0.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.0.normactconvq.conv: conv 1x1 384->768
+  BLOCK 1: nested_bottleneck_block model.blocks.1 nsub=6
+    model.blocks.1.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.1.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.1.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.1.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.1.blockstack.0.q_proj: 384->384
+      model.blocks.1.blockstack.0.k_proj: 384->384
+      model.blocks.1.blockstack.0.v_proj: 384->384
+      model.blocks.1.blockstack.0.out_proj: 384->384
+      model.blocks.1.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.1.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.1.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.1.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.1.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.1.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.1.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.1.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.1.blockstack.2.q_proj: 384->384
+      model.blocks.1.blockstack.2.k_proj: 384->384
+      model.blocks.1.blockstack.2.v_proj: 384->384
+      model.blocks.1.blockstack.2.out_proj: 384->384
+      model.blocks.1.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.1.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.1.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.1.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.1.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.1.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.1.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.1.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.1.blockstack.4.q_proj: 384->384
+      model.blocks.1.blockstack.4.k_proj: 384->384
+      model.blocks.1.blockstack.4.v_proj: 384->384
+      model.blocks.1.blockstack.4.out_proj: 384->384
+      model.blocks.1.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.1.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.1.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.1.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.1.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.1.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.1.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.1.normactconvq.conv: conv 1x1 384->768
+  BLOCK 2: nested_bottleneck_block model.blocks.2 nsub=6
+    model.blocks.2.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.2.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.2.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.2.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.2.blockstack.0.q_proj: 384->384
+      model.blocks.2.blockstack.0.k_proj: 384->384
+      model.blocks.2.blockstack.0.v_proj: 384->384
+      model.blocks.2.blockstack.0.out_proj: 384->384
+      model.blocks.2.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.2.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.2.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.2.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.2.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.2.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.2.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.2.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.2.blockstack.2.q_proj: 384->384
+      model.blocks.2.blockstack.2.k_proj: 384->384
+      model.blocks.2.blockstack.2.v_proj: 384->384
+      model.blocks.2.blockstack.2.out_proj: 384->384
+      model.blocks.2.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.2.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.2.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.2.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.2.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.2.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.2.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.2.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.2.blockstack.4.q_proj: 384->384
+      model.blocks.2.blockstack.4.k_proj: 384->384
+      model.blocks.2.blockstack.4.v_proj: 384->384
+      model.blocks.2.blockstack.4.out_proj: 384->384
+      model.blocks.2.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.2.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.2.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.2.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.2.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.2.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.2.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.2.normactconvq.conv: conv 1x1 384->768
+  BLOCK 3: nested_bottleneck_block model.blocks.3 nsub=6
+    model.blocks.3.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.3.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.3.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.3.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.3.blockstack.0.q_proj: 384->384
+      model.blocks.3.blockstack.0.k_proj: 384->384
+      model.blocks.3.blockstack.0.v_proj: 384->384
+      model.blocks.3.blockstack.0.out_proj: 384->384
+      model.blocks.3.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.3.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.3.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.3.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.3.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.3.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.3.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.3.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.3.blockstack.2.q_proj: 384->384
+      model.blocks.3.blockstack.2.k_proj: 384->384
+      model.blocks.3.blockstack.2.v_proj: 384->384
+      model.blocks.3.blockstack.2.out_proj: 384->384
+      model.blocks.3.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.3.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.3.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.3.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.3.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.3.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.3.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.3.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.3.blockstack.4.q_proj: 384->384
+      model.blocks.3.blockstack.4.k_proj: 384->384
+      model.blocks.3.blockstack.4.v_proj: 384->384
+      model.blocks.3.blockstack.4.out_proj: 384->384
+      model.blocks.3.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.3.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.3.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.3.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.3.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.3.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.3.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.3.normactconvq.conv: conv 1x1 384->768
+  BLOCK 4: nested_bottleneck_block model.blocks.4 nsub=6
+    model.blocks.4.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.4.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.4.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.4.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.4.blockstack.0.q_proj: 384->384
+      model.blocks.4.blockstack.0.k_proj: 384->384
+      model.blocks.4.blockstack.0.v_proj: 384->384
+      model.blocks.4.blockstack.0.out_proj: 384->384
+      model.blocks.4.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.4.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.4.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.4.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.4.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.4.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.4.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.4.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.4.blockstack.2.q_proj: 384->384
+      model.blocks.4.blockstack.2.k_proj: 384->384
+      model.blocks.4.blockstack.2.v_proj: 384->384
+      model.blocks.4.blockstack.2.out_proj: 384->384
+      model.blocks.4.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.4.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.4.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.4.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.4.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.4.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.4.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.4.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.4.blockstack.4.q_proj: 384->384
+      model.blocks.4.blockstack.4.k_proj: 384->384
+      model.blocks.4.blockstack.4.v_proj: 384->384
+      model.blocks.4.blockstack.4.out_proj: 384->384
+      model.blocks.4.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.4.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.4.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.4.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.4.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.4.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.4.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.4.normactconvq.conv: conv 1x1 384->768
+  BLOCK 5: nested_bottleneck_block model.blocks.5 nsub=6
+    model.blocks.5.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.5.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.5.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.5.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.5.blockstack.0.q_proj: 384->384
+      model.blocks.5.blockstack.0.k_proj: 384->384
+      model.blocks.5.blockstack.0.v_proj: 384->384
+      model.blocks.5.blockstack.0.out_proj: 384->384
+      model.blocks.5.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.5.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.5.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.5.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.5.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.5.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.5.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.5.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.5.blockstack.2.q_proj: 384->384
+      model.blocks.5.blockstack.2.k_proj: 384->384
+      model.blocks.5.blockstack.2.v_proj: 384->384
+      model.blocks.5.blockstack.2.out_proj: 384->384
+      model.blocks.5.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.5.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.5.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.5.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.5.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.5.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.5.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.5.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.5.blockstack.4.q_proj: 384->384
+      model.blocks.5.blockstack.4.k_proj: 384->384
+      model.blocks.5.blockstack.4.v_proj: 384->384
+      model.blocks.5.blockstack.4.out_proj: 384->384
+      model.blocks.5.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.5.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.5.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.5.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.5.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.5.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.5.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.5.normactconvq.conv: conv 1x1 384->768
+  BLOCK 6: nested_bottleneck_block model.blocks.6 nsub=6
+    model.blocks.6.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.6.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.6.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.6.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.6.blockstack.0.q_proj: 384->384
+      model.blocks.6.blockstack.0.k_proj: 384->384
+      model.blocks.6.blockstack.0.v_proj: 384->384
+      model.blocks.6.blockstack.0.out_proj: 384->384
+      model.blocks.6.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.6.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.6.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.6.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.6.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.6.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.6.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.6.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.6.blockstack.2.q_proj: 384->384
+      model.blocks.6.blockstack.2.k_proj: 384->384
+      model.blocks.6.blockstack.2.v_proj: 384->384
+      model.blocks.6.blockstack.2.out_proj: 384->384
+      model.blocks.6.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.6.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.6.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.6.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.6.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.6.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.6.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.6.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.6.blockstack.4.q_proj: 384->384
+      model.blocks.6.blockstack.4.k_proj: 384->384
+      model.blocks.6.blockstack.4.v_proj: 384->384
+      model.blocks.6.blockstack.4.out_proj: 384->384
+      model.blocks.6.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.6.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.6.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.6.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.6.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.6.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.6.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.6.normactconvq.conv: conv 1x1 384->768
+  BLOCK 7: nested_bottleneck_block model.blocks.7 nsub=6
+    model.blocks.7.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.7.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.7.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.7.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.7.blockstack.0.q_proj: 384->384
+      model.blocks.7.blockstack.0.k_proj: 384->384
+      model.blocks.7.blockstack.0.v_proj: 384->384
+      model.blocks.7.blockstack.0.out_proj: 384->384
+      model.blocks.7.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.7.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.7.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.7.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.7.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.7.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.7.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.7.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.7.blockstack.2.q_proj: 384->384
+      model.blocks.7.blockstack.2.k_proj: 384->384
+      model.blocks.7.blockstack.2.v_proj: 384->384
+      model.blocks.7.blockstack.2.out_proj: 384->384
+      model.blocks.7.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.7.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.7.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.7.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.7.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.7.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.7.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.7.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.7.blockstack.4.q_proj: 384->384
+      model.blocks.7.blockstack.4.k_proj: 384->384
+      model.blocks.7.blockstack.4.v_proj: 384->384
+      model.blocks.7.blockstack.4.out_proj: 384->384
+      model.blocks.7.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.7.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.7.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.7.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.7.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.7.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.7.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.7.normactconvq.conv: conv 1x1 384->768
+  BLOCK 8: nested_bottleneck_block model.blocks.8 nsub=6
+    model.blocks.8.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.8.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.8.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.8.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.8.blockstack.0.q_proj: 384->384
+      model.blocks.8.blockstack.0.k_proj: 384->384
+      model.blocks.8.blockstack.0.v_proj: 384->384
+      model.blocks.8.blockstack.0.out_proj: 384->384
+      model.blocks.8.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.8.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.8.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.8.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.8.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.8.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.8.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.8.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.8.blockstack.2.q_proj: 384->384
+      model.blocks.8.blockstack.2.k_proj: 384->384
+      model.blocks.8.blockstack.2.v_proj: 384->384
+      model.blocks.8.blockstack.2.out_proj: 384->384
+      model.blocks.8.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.8.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.8.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.8.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.8.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.8.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.8.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.8.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.8.blockstack.4.q_proj: 384->384
+      model.blocks.8.blockstack.4.k_proj: 384->384
+      model.blocks.8.blockstack.4.v_proj: 384->384
+      model.blocks.8.blockstack.4.out_proj: 384->384
+      model.blocks.8.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.8.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.8.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.8.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.8.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.8.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.8.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.8.normactconvq.conv: conv 1x1 384->768
+  BLOCK 9: nested_bottleneck_block model.blocks.9 nsub=6
+    model.blocks.9.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.9.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.9.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.9.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.9.blockstack.0.q_proj: 384->384
+      model.blocks.9.blockstack.0.k_proj: 384->384
+      model.blocks.9.blockstack.0.v_proj: 384->384
+      model.blocks.9.blockstack.0.out_proj: 384->384
+      model.blocks.9.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.9.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.9.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.9.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.9.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.9.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.9.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.9.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.9.blockstack.2.q_proj: 384->384
+      model.blocks.9.blockstack.2.k_proj: 384->384
+      model.blocks.9.blockstack.2.v_proj: 384->384
+      model.blocks.9.blockstack.2.out_proj: 384->384
+      model.blocks.9.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.9.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.9.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.9.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.9.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.9.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.9.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.9.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.9.blockstack.4.q_proj: 384->384
+      model.blocks.9.blockstack.4.k_proj: 384->384
+      model.blocks.9.blockstack.4.v_proj: 384->384
+      model.blocks.9.blockstack.4.out_proj: 384->384
+      model.blocks.9.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.9.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.9.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.9.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.9.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.9.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.9.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.9.normactconvq.conv: conv 1x1 384->768
+  BLOCK 10: nested_bottleneck_block model.blocks.10 nsub=6
+    model.blocks.10.normactconvp.norm: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.10.normactconvp.conv: conv 1x1 768->384
+    ATTN model.blocks.10.blockstack.0: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.10.blockstack.0.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.10.blockstack.0.q_proj: 384->384
+      model.blocks.10.blockstack.0.k_proj: 384->384
+      model.blocks.10.blockstack.0.v_proj: 384->384
+      model.blocks.10.blockstack.0.out_proj: 384->384
+      model.blocks.10.blockstack.0.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.10.blockstack.1: c=384 ffn=1152 swiglu=1
+      model.blocks.10.blockstack.1.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.10.blockstack.1.ffn_linear1: 384->1152
+      model.blocks.10.blockstack.1.ffn_linear_gate: 384->1152
+      model.blocks.10.blockstack.1.ffn_linear2: 1152->384
+    ATTN model.blocks.10.blockstack.2: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.10.blockstack.2.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.10.blockstack.2.q_proj: 384->384
+      model.blocks.10.blockstack.2.k_proj: 384->384
+      model.blocks.10.blockstack.2.v_proj: 384->384
+      model.blocks.10.blockstack.2.out_proj: 384->384
+      model.blocks.10.blockstack.2.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.10.blockstack.3: c=384 ffn=1152 swiglu=1
+      model.blocks.10.blockstack.3.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.10.blockstack.3.ffn_linear1: 384->1152
+      model.blocks.10.blockstack.3.ffn_linear_gate: 384->1152
+      model.blocks.10.blockstack.3.ffn_linear2: 1152->384
+    ATTN model.blocks.10.blockstack.4: h=12 kv=12 qd=32 vd=32 rope=1 learnable=1
+      model.blocks.10.blockstack.4.norm1: rmsnorm c=384 eps=1e-06
+      model.blocks.10.blockstack.4.q_proj: 384->384
+      model.blocks.10.blockstack.4.k_proj: 384->384
+      model.blocks.10.blockstack.4.v_proj: 384->384
+      model.blocks.10.blockstack.4.out_proj: 384->384
+      model.blocks.10.blockstack.4.rope_freqs: rope_freqs 12x16x2
+    FFN model.blocks.10.blockstack.5: c=384 ffn=1152 swiglu=1
+      model.blocks.10.blockstack.5.norm: rmsnorm c=384 eps=1e-06
+      model.blocks.10.blockstack.5.ffn_linear1: 384->1152
+      model.blocks.10.blockstack.5.ffn_linear_gate: 384->1152
+      model.blocks.10.blockstack.5.ffn_linear2: 1152->384
+    model.blocks.10.normactconvq.norm: c=384 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    model.blocks.10.normactconvq.conv: conv 1x1 384->768
+  model.norm_trunkfinal: c=768 eps=1e-20 hasScale=1 hasBias=1 (4 bins)
+    mean[:5]=[-4.775585651397705, -3.427976369857788, -15.431639671325684, 3.338003158569336, -1.155828595161438] var[:5]=[6.311400890350342, 1.8933981657028198, 7.4267354011535645, 1.8738945722579956, 3.1784138679504395]
+  model.act_trunkfinal: ACTIVATION_SILU
+POLICY: outChannels=2 unused=[0, 0, 0]
+  model.policy_head.conv1p: conv 1x1 768->96
+  model.policy_head.conv1g: conv 1x1 768->96
+  model.policy_head.biasg: c=96 eps=1e-20 hasScale=0 hasBias=1
+  model.policy_head.actg: ACTIVATION_SILU
+  model.policy_head.linear_g: matmul 288->96
+  model.policy_head.bias2: c=96 eps=1e-20 hasScale=0 hasBias=1
+  model.policy_head.act2: ACTIVATION_SILU
+  model.policy_head.conv2p: conv 1x1 96->2 (policyOutChannels=2)
+  model.policy_head.linear_pass: matmul 288->96
+  model.policy_head.linear_pass_bias: bias 96
+  model.policy_head.act_pass: ACTIVATION_SILU
+  model.policy_head.linear_pass2: matmul 96->2
+VALUE: unused=[0, 0, 0]
+  model.value_head.conv1: conv 1x1 768->192
+  model.value_head.bias1: c=192 eps=1e-20 hasScale=0 hasBias=1
+  model.value_head.act1: ACTIVATION_SILU
+  model.value_head.linear2: matmul 576->192
+  model.value_head.bias2: bias 192
+  model.value_head.act2: ACTIVATION_SILU
+  model.value_head.linear_valuehead: matmul 192->3
+  model.value_head.bias_valuehead: bias 3
+  model.value_head.linear_miscvaluehead: matmul 192->6
+  model.value_head.bias_miscvaluehead: bias 6
+  model.value_head.conv_ownership: conv 1x1 192->1
+
+Parsed OK. pos=281905894 filelen=281905895 leftover=1
+Wrote 470 bins to bins.txt
