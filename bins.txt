@@ -1,0 +1,470 @@
+169	152064	model.conv_spatial conv 3x3 22->768
+608458	14592	model.linear_global matmul 19->768
+666920	768	model.blocks.0.normactconvp.norm[0]
+669998	768	model.blocks.0.normactconvp.norm[1]
+673076	768	model.blocks.0.normactconvp.norm[2]
+676154	768	model.blocks.0.normactconvp.norm[3]
+679329	294912	model.blocks.0.normactconvp.conv conv
+1859099	384	model.blocks.0.blockstack.0.norm1 rmsnorm w
+1860684	147456	model.blocks.0.blockstack.0.q_proj matmul
+2450557	147456	model.blocks.0.blockstack.0.k_proj matmul
+3040430	147456	model.blocks.0.blockstack.0.v_proj matmul
+3630305	147456	model.blocks.0.blockstack.0.out_proj matmul
+4220182	384	model.blocks.0.blockstack.0.rope_freqs ropefreqs
+4221828	384	model.blocks.0.blockstack.1.norm rmsnorm w
+4223419	442368	model.blocks.0.blockstack.1.ffn_linear1 matmul
+5992950	442368	model.blocks.0.blockstack.1.ffn_linear_gate matmul
+7762477	442368	model.blocks.0.blockstack.1.ffn_linear2 matmul
+9532071	384	model.blocks.0.blockstack.2.norm1 rmsnorm w
+9533656	147456	model.blocks.0.blockstack.2.q_proj matmul
+10123529	147456	model.blocks.0.blockstack.2.k_proj matmul
+10713402	147456	model.blocks.0.blockstack.2.v_proj matmul
+11303277	147456	model.blocks.0.blockstack.2.out_proj matmul
+11893154	384	model.blocks.0.blockstack.2.rope_freqs ropefreqs
+11894800	384	model.blocks.0.blockstack.3.norm rmsnorm w
+11896391	442368	model.blocks.0.blockstack.3.ffn_linear1 matmul
+13665922	442368	model.blocks.0.blockstack.3.ffn_linear_gate matmul
+15435449	442368	model.blocks.0.blockstack.3.ffn_linear2 matmul
+17205043	384	model.blocks.0.blockstack.4.norm1 rmsnorm w
+17206628	147456	model.blocks.0.blockstack.4.q_proj matmul
+17796501	147456	model.blocks.0.blockstack.4.k_proj matmul
+18386374	147456	model.blocks.0.blockstack.4.v_proj matmul
+18976249	147456	model.blocks.0.blockstack.4.out_proj matmul
+19566126	384	model.blocks.0.blockstack.4.rope_freqs ropefreqs
+19567772	384	model.blocks.0.blockstack.5.norm rmsnorm w
+19569363	442368	model.blocks.0.blockstack.5.ffn_linear1 matmul
+21338894	442368	model.blocks.0.blockstack.5.ffn_linear_gate matmul
+23108421	442368	model.blocks.0.blockstack.5.ffn_linear2 matmul
+24877946	384	model.blocks.0.normactconvq.norm[0]
+24879488	384	model.blocks.0.normactconvq.norm[1]
+24881030	384	model.blocks.0.normactconvq.norm[2]
+24882572	384	model.blocks.0.normactconvq.norm[3]
+24884211	294912	model.blocks.0.normactconvq.conv conv
+26063953	768	model.blocks.1.normactconvp.norm[0]
+26067031	768	model.blocks.1.normactconvp.norm[1]
+26070109	768	model.blocks.1.normactconvp.norm[2]
+26073187	768	model.blocks.1.normactconvp.norm[3]
+26076362	294912	model.blocks.1.normactconvp.conv conv
+27256132	384	model.blocks.1.blockstack.0.norm1 rmsnorm w
+27257717	147456	model.blocks.1.blockstack.0.q_proj matmul
+27847590	147456	model.blocks.1.blockstack.0.k_proj matmul
+28437463	147456	model.blocks.1.blockstack.0.v_proj matmul
+29027338	147456	model.blocks.1.blockstack.0.out_proj matmul
+29617215	384	model.blocks.1.blockstack.0.rope_freqs ropefreqs
+29618861	384	model.blocks.1.blockstack.1.norm rmsnorm w
+29620452	442368	model.blocks.1.blockstack.1.ffn_linear1 matmul
+31389983	442368	model.blocks.1.blockstack.1.ffn_linear_gate matmul
+33159510	442368	model.blocks.1.blockstack.1.ffn_linear2 matmul
+34929104	384	model.blocks.1.blockstack.2.norm1 rmsnorm w
+34930689	147456	model.blocks.1.blockstack.2.q_proj matmul
+35520562	147456	model.blocks.1.blockstack.2.k_proj matmul
+36110435	147456	model.blocks.1.blockstack.2.v_proj matmul
+36700310	147456	model.blocks.1.blockstack.2.out_proj matmul
+37290187	384	model.blocks.1.blockstack.2.rope_freqs ropefreqs
+37291833	384	model.blocks.1.blockstack.3.norm rmsnorm w
+37293424	442368	model.blocks.1.blockstack.3.ffn_linear1 matmul
+39062955	442368	model.blocks.1.blockstack.3.ffn_linear_gate matmul
+40832482	442368	model.blocks.1.blockstack.3.ffn_linear2 matmul
+42602076	384	model.blocks.1.blockstack.4.norm1 rmsnorm w
+42603661	147456	model.blocks.1.blockstack.4.q_proj matmul
+43193534	147456	model.blocks.1.blockstack.4.k_proj matmul
+43783407	147456	model.blocks.1.blockstack.4.v_proj matmul
+44373282	147456	model.blocks.1.blockstack.4.out_proj matmul
+44963159	384	model.blocks.1.blockstack.4.rope_freqs ropefreqs
+44964805	384	model.blocks.1.blockstack.5.norm rmsnorm w
+44966396	442368	model.blocks.1.blockstack.5.ffn_linear1 matmul
+46735927	442368	model.blocks.1.blockstack.5.ffn_linear_gate matmul
+48505454	442368	model.blocks.1.blockstack.5.ffn_linear2 matmul
+50274979	384	model.blocks.1.normactconvq.norm[0]
+50276521	384	model.blocks.1.normactconvq.norm[1]
+50278063	384	model.blocks.1.normactconvq.norm[2]
+50279605	384	model.blocks.1.normactconvq.norm[3]
+50281244	294912	model.blocks.1.normactconvq.conv conv
+51460986	768	model.blocks.2.normactconvp.norm[0]
+51464064	768	model.blocks.2.normactconvp.norm[1]
+51467142	768	model.blocks.2.normactconvp.norm[2]
+51470220	768	model.blocks.2.normactconvp.norm[3]
+51473395	294912	model.blocks.2.normactconvp.conv conv
+52653165	384	model.blocks.2.blockstack.0.norm1 rmsnorm w
+52654750	147456	model.blocks.2.blockstack.0.q_proj matmul
+53244623	147456	model.blocks.2.blockstack.0.k_proj matmul
+53834496	147456	model.blocks.2.blockstack.0.v_proj matmul
+54424371	147456	model.blocks.2.blockstack.0.out_proj matmul
+55014248	384	model.blocks.2.blockstack.0.rope_freqs ropefreqs
+55015894	384	model.blocks.2.blockstack.1.norm rmsnorm w
+55017485	442368	model.blocks.2.blockstack.1.ffn_linear1 matmul
+56787016	442368	model.blocks.2.blockstack.1.ffn_linear_gate matmul
+58556543	442368	model.blocks.2.blockstack.1.ffn_linear2 matmul
+60326137	384	model.blocks.2.blockstack.2.norm1 rmsnorm w
+60327722	147456	model.blocks.2.blockstack.2.q_proj matmul
+60917595	147456	model.blocks.2.blockstack.2.k_proj matmul
+61507468	147456	model.blocks.2.blockstack.2.v_proj matmul
+62097343	147456	model.blocks.2.blockstack.2.out_proj matmul
+62687220	384	model.blocks.2.blockstack.2.rope_freqs ropefreqs
+62688866	384	model.blocks.2.blockstack.3.norm rmsnorm w
+62690457	442368	model.blocks.2.blockstack.3.ffn_linear1 matmul
+64459988	442368	model.blocks.2.blockstack.3.ffn_linear_gate matmul
+66229515	442368	model.blocks.2.blockstack.3.ffn_linear2 matmul
+67999109	384	model.blocks.2.blockstack.4.norm1 rmsnorm w
+68000694	147456	model.blocks.2.blockstack.4.q_proj matmul
+68590567	147456	model.blocks.2.blockstack.4.k_proj matmul
+69180440	147456	model.blocks.2.blockstack.4.v_proj matmul
+69770315	147456	model.blocks.2.blockstack.4.out_proj matmul
+70360192	384	model.blocks.2.blockstack.4.rope_freqs ropefreqs
+70361838	384	model.blocks.2.blockstack.5.norm rmsnorm w
+70363429	442368	model.blocks.2.blockstack.5.ffn_linear1 matmul
+72132960	442368	model.blocks.2.blockstack.5.ffn_linear_gate matmul
+73902487	442368	model.blocks.2.blockstack.5.ffn_linear2 matmul
+75672012	384	model.blocks.2.normactconvq.norm[0]
+75673554	384	model.blocks.2.normactconvq.norm[1]
+75675096	384	model.blocks.2.normactconvq.norm[2]
+75676638	384	model.blocks.2.normactconvq.norm[3]
+75678277	294912	model.blocks.2.normactconvq.conv conv
+76858019	768	model.blocks.3.normactconvp.norm[0]
+76861097	768	model.blocks.3.normactconvp.norm[1]
+76864175	768	model.blocks.3.normactconvp.norm[2]
+76867253	768	model.blocks.3.normactconvp.norm[3]
+76870428	294912	model.blocks.3.normactconvp.conv conv
+78050198	384	model.blocks.3.blockstack.0.norm1 rmsnorm w
+78051783	147456	model.blocks.3.blockstack.0.q_proj matmul
+78641656	147456	model.blocks.3.blockstack.0.k_proj matmul
+79231529	147456	model.blocks.3.blockstack.0.v_proj matmul
+79821404	147456	model.blocks.3.blockstack.0.out_proj matmul
+80411281	384	model.blocks.3.blockstack.0.rope_freqs ropefreqs
+80412927	384	model.blocks.3.blockstack.1.norm rmsnorm w
+80414518	442368	model.blocks.3.blockstack.1.ffn_linear1 matmul
+82184049	442368	model.blocks.3.blockstack.1.ffn_linear_gate matmul
+83953576	442368	model.blocks.3.blockstack.1.ffn_linear2 matmul
+85723170	384	model.blocks.3.blockstack.2.norm1 rmsnorm w
+85724755	147456	model.blocks.3.blockstack.2.q_proj matmul
+86314628	147456	model.blocks.3.blockstack.2.k_proj matmul
+86904501	147456	model.blocks.3.blockstack.2.v_proj matmul
+87494376	147456	model.blocks.3.blockstack.2.out_proj matmul
+88084253	384	model.blocks.3.blockstack.2.rope_freqs ropefreqs
+88085899	384	model.blocks.3.blockstack.3.norm rmsnorm w
+88087490	442368	model.blocks.3.blockstack.3.ffn_linear1 matmul
+89857021	442368	model.blocks.3.blockstack.3.ffn_linear_gate matmul
+91626548	442368	model.blocks.3.blockstack.3.ffn_linear2 matmul
+93396142	384	model.blocks.3.blockstack.4.norm1 rmsnorm w
+93397727	147456	model.blocks.3.blockstack.4.q_proj matmul
+93987600	147456	model.blocks.3.blockstack.4.k_proj matmul
+94577473	147456	model.blocks.3.blockstack.4.v_proj matmul
+95167348	147456	model.blocks.3.blockstack.4.out_proj matmul
+95757225	384	model.blocks.3.blockstack.4.rope_freqs ropefreqs
+95758871	384	model.blocks.3.blockstack.5.norm rmsnorm w
+95760462	442368	model.blocks.3.blockstack.5.ffn_linear1 matmul
+97529993	442368	model.blocks.3.blockstack.5.ffn_linear_gate matmul
+99299520	442368	model.blocks.3.blockstack.5.ffn_linear2 matmul
+101069045	384	model.blocks.3.normactconvq.norm[0]
+101070587	384	model.blocks.3.normactconvq.norm[1]
+101072129	384	model.blocks.3.normactconvq.norm[2]
+101073671	384	model.blocks.3.normactconvq.norm[3]
+101075310	294912	model.blocks.3.normactconvq.conv conv
+102255052	768	model.blocks.4.normactconvp.norm[0]
+102258130	768	model.blocks.4.normactconvp.norm[1]
+102261208	768	model.blocks.4.normactconvp.norm[2]
+102264286	768	model.blocks.4.normactconvp.norm[3]
+102267461	294912	model.blocks.4.normactconvp.conv conv
+103447231	384	model.blocks.4.blockstack.0.norm1 rmsnorm w
+103448816	147456	model.blocks.4.blockstack.0.q_proj matmul
+104038689	147456	model.blocks.4.blockstack.0.k_proj matmul
+104628562	147456	model.blocks.4.blockstack.0.v_proj matmul
+105218437	147456	model.blocks.4.blockstack.0.out_proj matmul
+105808314	384	model.blocks.4.blockstack.0.rope_freqs ropefreqs
+105809960	384	model.blocks.4.blockstack.1.norm rmsnorm w
+105811551	442368	model.blocks.4.blockstack.1.ffn_linear1 matmul
+107581082	442368	model.blocks.4.blockstack.1.ffn_linear_gate matmul
+109350609	442368	model.blocks.4.blockstack.1.ffn_linear2 matmul
+111120203	384	model.blocks.4.blockstack.2.norm1 rmsnorm w
+111121788	147456	model.blocks.4.blockstack.2.q_proj matmul
+111711661	147456	model.blocks.4.blockstack.2.k_proj matmul
+112301534	147456	model.blocks.4.blockstack.2.v_proj matmul
+112891409	147456	model.blocks.4.blockstack.2.out_proj matmul
+113481286	384	model.blocks.4.blockstack.2.rope_freqs ropefreqs
+113482932	384	model.blocks.4.blockstack.3.norm rmsnorm w
+113484523	442368	model.blocks.4.blockstack.3.ffn_linear1 matmul
+115254054	442368	model.blocks.4.blockstack.3.ffn_linear_gate matmul
+117023581	442368	model.blocks.4.blockstack.3.ffn_linear2 matmul
+118793175	384	model.blocks.4.blockstack.4.norm1 rmsnorm w
+118794760	147456	model.blocks.4.blockstack.4.q_proj matmul
+119384633	147456	model.blocks.4.blockstack.4.k_proj matmul
+119974506	147456	model.blocks.4.blockstack.4.v_proj matmul
+120564381	147456	model.blocks.4.blockstack.4.out_proj matmul
+121154258	384	model.blocks.4.blockstack.4.rope_freqs ropefreqs
+121155904	384	model.blocks.4.blockstack.5.norm rmsnorm w
+121157495	442368	model.blocks.4.blockstack.5.ffn_linear1 matmul
+122927026	442368	model.blocks.4.blockstack.5.ffn_linear_gate matmul
+124696553	442368	model.blocks.4.blockstack.5.ffn_linear2 matmul
+126466078	384	model.blocks.4.normactconvq.norm[0]
+126467620	384	model.blocks.4.normactconvq.norm[1]
+126469162	384	model.blocks.4.normactconvq.norm[2]
+126470704	384	model.blocks.4.normactconvq.norm[3]
+126472343	294912	model.blocks.4.normactconvq.conv conv
+127652085	768	model.blocks.5.normactconvp.norm[0]
+127655163	768	model.blocks.5.normactconvp.norm[1]
+127658241	768	model.blocks.5.normactconvp.norm[2]
+127661319	768	model.blocks.5.normactconvp.norm[3]
+127664494	294912	model.blocks.5.normactconvp.conv conv
+128844264	384	model.blocks.5.blockstack.0.norm1 rmsnorm w
+128845849	147456	model.blocks.5.blockstack.0.q_proj matmul
+129435722	147456	model.blocks.5.blockstack.0.k_proj matmul
+130025595	147456	model.blocks.5.blockstack.0.v_proj matmul
+130615470	147456	model.blocks.5.blockstack.0.out_proj matmul
+131205347	384	model.blocks.5.blockstack.0.rope_freqs ropefreqs
+131206993	384	model.blocks.5.blockstack.1.norm rmsnorm w
+131208584	442368	model.blocks.5.blockstack.1.ffn_linear1 matmul
+132978115	442368	model.blocks.5.blockstack.1.ffn_linear_gate matmul
+134747642	442368	model.blocks.5.blockstack.1.ffn_linear2 matmul
+136517236	384	model.blocks.5.blockstack.2.norm1 rmsnorm w
+136518821	147456	model.blocks.5.blockstack.2.q_proj matmul
+137108694	147456	model.blocks.5.blockstack.2.k_proj matmul
+137698567	147456	model.blocks.5.blockstack.2.v_proj matmul
+138288442	147456	model.blocks.5.blockstack.2.out_proj matmul
+138878319	384	model.blocks.5.blockstack.2.rope_freqs ropefreqs
+138879965	384	model.blocks.5.blockstack.3.norm rmsnorm w
+138881556	442368	model.blocks.5.blockstack.3.ffn_linear1 matmul
+140651087	442368	model.blocks.5.blockstack.3.ffn_linear_gate matmul
+142420614	442368	model.blocks.5.blockstack.3.ffn_linear2 matmul
+144190208	384	model.blocks.5.blockstack.4.norm1 rmsnorm w
+144191793	147456	model.blocks.5.blockstack.4.q_proj matmul
+144781666	147456	model.blocks.5.blockstack.4.k_proj matmul
+145371539	147456	model.blocks.5.blockstack.4.v_proj matmul
+145961414	147456	model.blocks.5.blockstack.4.out_proj matmul
+146551291	384	model.blocks.5.blockstack.4.rope_freqs ropefreqs
+146552937	384	model.blocks.5.blockstack.5.norm rmsnorm w
+146554528	442368	model.blocks.5.blockstack.5.ffn_linear1 matmul
+148324059	442368	model.blocks.5.blockstack.5.ffn_linear_gate matmul
+150093586	442368	model.blocks.5.blockstack.5.ffn_linear2 matmul
+151863111	384	model.blocks.5.normactconvq.norm[0]
+151864653	384	model.blocks.5.normactconvq.norm[1]
+151866195	384	model.blocks.5.normactconvq.norm[2]
+151867737	384	model.blocks.5.normactconvq.norm[3]
+151869376	294912	model.blocks.5.normactconvq.conv conv
+153049118	768	model.blocks.6.normactconvp.norm[0]
+153052196	768	model.blocks.6.normactconvp.norm[1]
+153055274	768	model.blocks.6.normactconvp.norm[2]
+153058352	768	model.blocks.6.normactconvp.norm[3]
+153061527	294912	model.blocks.6.normactconvp.conv conv
+154241297	384	model.blocks.6.blockstack.0.norm1 rmsnorm w
+154242882	147456	model.blocks.6.blockstack.0.q_proj matmul
+154832755	147456	model.blocks.6.blockstack.0.k_proj matmul
+155422628	147456	model.blocks.6.blockstack.0.v_proj matmul
+156012503	147456	model.blocks.6.blockstack.0.out_proj matmul
+156602380	384	model.blocks.6.blockstack.0.rope_freqs ropefreqs
+156604026	384	model.blocks.6.blockstack.1.norm rmsnorm w
+156605617	442368	model.blocks.6.blockstack.1.ffn_linear1 matmul
+158375148	442368	model.blocks.6.blockstack.1.ffn_linear_gate matmul
+160144675	442368	model.blocks.6.blockstack.1.ffn_linear2 matmul
+161914269	384	model.blocks.6.blockstack.2.norm1 rmsnorm w
+161915854	147456	model.blocks.6.blockstack.2.q_proj matmul
+162505727	147456	model.blocks.6.blockstack.2.k_proj matmul
+163095600	147456	model.blocks.6.blockstack.2.v_proj matmul
+163685475	147456	model.blocks.6.blockstack.2.out_proj matmul
+164275352	384	model.blocks.6.blockstack.2.rope_freqs ropefreqs
+164276998	384	model.blocks.6.blockstack.3.norm rmsnorm w
+164278589	442368	model.blocks.6.blockstack.3.ffn_linear1 matmul
+166048120	442368	model.blocks.6.blockstack.3.ffn_linear_gate matmul
+167817647	442368	model.blocks.6.blockstack.3.ffn_linear2 matmul
+169587241	384	model.blocks.6.blockstack.4.norm1 rmsnorm w
+169588826	147456	model.blocks.6.blockstack.4.q_proj matmul
+170178699	147456	model.blocks.6.blockstack.4.k_proj matmul
+170768572	147456	model.blocks.6.blockstack.4.v_proj matmul
+171358447	147456	model.blocks.6.blockstack.4.out_proj matmul
+171948324	384	model.blocks.6.blockstack.4.rope_freqs ropefreqs
+171949970	384	model.blocks.6.blockstack.5.norm rmsnorm w
+171951561	442368	model.blocks.6.blockstack.5.ffn_linear1 matmul
+173721092	442368	model.blocks.6.blockstack.5.ffn_linear_gate matmul
+175490619	442368	model.blocks.6.blockstack.5.ffn_linear2 matmul
+177260144	384	model.blocks.6.normactconvq.norm[0]
+177261686	384	model.blocks.6.normactconvq.norm[1]
+177263228	384	model.blocks.6.normactconvq.norm[2]
+177264770	384	model.blocks.6.normactconvq.norm[3]
+177266409	294912	model.blocks.6.normactconvq.conv conv
+178446151	768	model.blocks.7.normactconvp.norm[0]
+178449229	768	model.blocks.7.normactconvp.norm[1]
+178452307	768	model.blocks.7.normactconvp.norm[2]
+178455385	768	model.blocks.7.normactconvp.norm[3]
+178458560	294912	model.blocks.7.normactconvp.conv conv
+179638330	384	model.blocks.7.blockstack.0.norm1 rmsnorm w
+179639915	147456	model.blocks.7.blockstack.0.q_proj matmul
+180229788	147456	model.blocks.7.blockstack.0.k_proj matmul
+180819661	147456	model.blocks.7.blockstack.0.v_proj matmul
+181409536	147456	model.blocks.7.blockstack.0.out_proj matmul
+181999413	384	model.blocks.7.blockstack.0.rope_freqs ropefreqs
+182001059	384	model.blocks.7.blockstack.1.norm rmsnorm w
+182002650	442368	model.blocks.7.blockstack.1.ffn_linear1 matmul
+183772181	442368	model.blocks.7.blockstack.1.ffn_linear_gate matmul
+185541708	442368	model.blocks.7.blockstack.1.ffn_linear2 matmul
+187311302	384	model.blocks.7.blockstack.2.norm1 rmsnorm w
+187312887	147456	model.blocks.7.blockstack.2.q_proj matmul
+187902760	147456	model.blocks.7.blockstack.2.k_proj matmul
+188492633	147456	model.blocks.7.blockstack.2.v_proj matmul
+189082508	147456	model.blocks.7.blockstack.2.out_proj matmul
+189672385	384	model.blocks.7.blockstack.2.rope_freqs ropefreqs
+189674031	384	model.blocks.7.blockstack.3.norm rmsnorm w
+189675622	442368	model.blocks.7.blockstack.3.ffn_linear1 matmul
+191445153	442368	model.blocks.7.blockstack.3.ffn_linear_gate matmul
+193214680	442368	model.blocks.7.blockstack.3.ffn_linear2 matmul
+194984274	384	model.blocks.7.blockstack.4.norm1 rmsnorm w
+194985859	147456	model.blocks.7.blockstack.4.q_proj matmul
+195575732	147456	model.blocks.7.blockstack.4.k_proj matmul
+196165605	147456	model.blocks.7.blockstack.4.v_proj matmul
+196755480	147456	model.blocks.7.blockstack.4.out_proj matmul
+197345357	384	model.blocks.7.blockstack.4.rope_freqs ropefreqs
+197347003	384	model.blocks.7.blockstack.5.norm rmsnorm w
+197348594	442368	model.blocks.7.blockstack.5.ffn_linear1 matmul
+199118125	442368	model.blocks.7.blockstack.5.ffn_linear_gate matmul
+200887652	442368	model.blocks.7.blockstack.5.ffn_linear2 matmul
+202657177	384	model.blocks.7.normactconvq.norm[0]
+202658719	384	model.blocks.7.normactconvq.norm[1]
+202660261	384	model.blocks.7.normactconvq.norm[2]
+202661803	384	model.blocks.7.normactconvq.norm[3]
+202663442	294912	model.blocks.7.normactconvq.conv conv
+203843184	768	model.blocks.8.normactconvp.norm[0]
+203846262	768	model.blocks.8.normactconvp.norm[1]
+203849340	768	model.blocks.8.normactconvp.norm[2]
+203852418	768	model.blocks.8.normactconvp.norm[3]
+203855593	294912	model.blocks.8.normactconvp.conv conv
+205035363	384	model.blocks.8.blockstack.0.norm1 rmsnorm w
+205036948	147456	model.blocks.8.blockstack.0.q_proj matmul
+205626821	147456	model.blocks.8.blockstack.0.k_proj matmul
+206216694	147456	model.blocks.8.blockstack.0.v_proj matmul
+206806569	147456	model.blocks.8.blockstack.0.out_proj matmul
+207396446	384	model.blocks.8.blockstack.0.rope_freqs ropefreqs
+207398092	384	model.blocks.8.blockstack.1.norm rmsnorm w
+207399683	442368	model.blocks.8.blockstack.1.ffn_linear1 matmul
+209169214	442368	model.blocks.8.blockstack.1.ffn_linear_gate matmul
+210938741	442368	model.blocks.8.blockstack.1.ffn_linear2 matmul
+212708335	384	model.blocks.8.blockstack.2.norm1 rmsnorm w
+212709920	147456	model.blocks.8.blockstack.2.q_proj matmul
+213299793	147456	model.blocks.8.blockstack.2.k_proj matmul
+213889666	147456	model.blocks.8.blockstack.2.v_proj matmul
+214479541	147456	model.blocks.8.blockstack.2.out_proj matmul
+215069418	384	model.blocks.8.blockstack.2.rope_freqs ropefreqs
+215071064	384	model.blocks.8.blockstack.3.norm rmsnorm w
+215072655	442368	model.blocks.8.blockstack.3.ffn_linear1 matmul
+216842186	442368	model.blocks.8.blockstack.3.ffn_linear_gate matmul
+218611713	442368	model.blocks.8.blockstack.3.ffn_linear2 matmul
+220381307	384	model.blocks.8.blockstack.4.norm1 rmsnorm w
+220382892	147456	model.blocks.8.blockstack.4.q_proj matmul
+220972765	147456	model.blocks.8.blockstack.4.k_proj matmul
+221562638	147456	model.blocks.8.blockstack.4.v_proj matmul
+222152513	147456	model.blocks.8.blockstack.4.out_proj matmul
+222742390	384	model.blocks.8.blockstack.4.rope_freqs ropefreqs
+222744036	384	model.blocks.8.blockstack.5.norm rmsnorm w
+222745627	442368	model.blocks.8.blockstack.5.ffn_linear1 matmul
+224515158	442368	model.blocks.8.blockstack.5.ffn_linear_gate matmul
+226284685	442368	model.blocks.8.blockstack.5.ffn_linear2 matmul
+228054210	384	model.blocks.8.normactconvq.norm[0]
+228055752	384	model.blocks.8.normactconvq.norm[1]
+228057294	384	model.blocks.8.normactconvq.norm[2]
+228058836	384	model.blocks.8.normactconvq.norm[3]
+228060475	294912	model.blocks.8.normactconvq.conv conv
+229240217	768	model.blocks.9.normactconvp.norm[0]
+229243295	768	model.blocks.9.normactconvp.norm[1]
+229246373	768	model.blocks.9.normactconvp.norm[2]
+229249451	768	model.blocks.9.normactconvp.norm[3]
+229252626	294912	model.blocks.9.normactconvp.conv conv
+230432396	384	model.blocks.9.blockstack.0.norm1 rmsnorm w
+230433981	147456	model.blocks.9.blockstack.0.q_proj matmul
+231023854	147456	model.blocks.9.blockstack.0.k_proj matmul
+231613727	147456	model.blocks.9.blockstack.0.v_proj matmul
+232203602	147456	model.blocks.9.blockstack.0.out_proj matmul
+232793479	384	model.blocks.9.blockstack.0.rope_freqs ropefreqs
+232795125	384	model.blocks.9.blockstack.1.norm rmsnorm w
+232796716	442368	model.blocks.9.blockstack.1.ffn_linear1 matmul
+234566247	442368	model.blocks.9.blockstack.1.ffn_linear_gate matmul
+236335774	442368	model.blocks.9.blockstack.1.ffn_linear2 matmul
+238105368	384	model.blocks.9.blockstack.2.norm1 rmsnorm w
+238106953	147456	model.blocks.9.blockstack.2.q_proj matmul
+238696826	147456	model.blocks.9.blockstack.2.k_proj matmul
+239286699	147456	model.blocks.9.blockstack.2.v_proj matmul
+239876574	147456	model.blocks.9.blockstack.2.out_proj matmul
+240466451	384	model.blocks.9.blockstack.2.rope_freqs ropefreqs
+240468097	384	model.blocks.9.blockstack.3.norm rmsnorm w
+240469688	442368	model.blocks.9.blockstack.3.ffn_linear1 matmul
+242239219	442368	model.blocks.9.blockstack.3.ffn_linear_gate matmul
+244008746	442368	model.blocks.9.blockstack.3.ffn_linear2 matmul
+245778340	384	model.blocks.9.blockstack.4.norm1 rmsnorm w
+245779925	147456	model.blocks.9.blockstack.4.q_proj matmul
+246369798	147456	model.blocks.9.blockstack.4.k_proj matmul
+246959671	147456	model.blocks.9.blockstack.4.v_proj matmul
+247549546	147456	model.blocks.9.blockstack.4.out_proj matmul
+248139423	384	model.blocks.9.blockstack.4.rope_freqs ropefreqs
+248141069	384	model.blocks.9.blockstack.5.norm rmsnorm w
+248142660	442368	model.blocks.9.blockstack.5.ffn_linear1 matmul
+249912191	442368	model.blocks.9.blockstack.5.ffn_linear_gate matmul
+251681718	442368	model.blocks.9.blockstack.5.ffn_linear2 matmul
+253451243	384	model.blocks.9.normactconvq.norm[0]
+253452785	384	model.blocks.9.normactconvq.norm[1]
+253454327	384	model.blocks.9.normactconvq.norm[2]
+253455869	384	model.blocks.9.normactconvq.norm[3]
+253457508	294912	model.blocks.9.normactconvq.conv conv
+254637252	768	model.blocks.10.normactconvp.norm[0]
+254640330	768	model.blocks.10.normactconvp.norm[1]
+254643408	768	model.blocks.10.normactconvp.norm[2]
+254646486	768	model.blocks.10.normactconvp.norm[3]
+254649663	294912	model.blocks.10.normactconvp.conv conv
+255829435	384	model.blocks.10.blockstack.0.norm1 rmsnorm w
+255831021	147456	model.blocks.10.blockstack.0.q_proj matmul
+256420895	147456	model.blocks.10.blockstack.0.k_proj matmul
+257010769	147456	model.blocks.10.blockstack.0.v_proj matmul
+257600645	147456	model.blocks.10.blockstack.0.out_proj matmul
+258190523	384	model.blocks.10.blockstack.0.rope_freqs ropefreqs
+258192171	384	model.blocks.10.blockstack.1.norm rmsnorm w
+258193763	442368	model.blocks.10.blockstack.1.ffn_linear1 matmul
+259963295	442368	model.blocks.10.blockstack.1.ffn_linear_gate matmul
+261732823	442368	model.blocks.10.blockstack.1.ffn_linear2 matmul
+263502419	384	model.blocks.10.blockstack.2.norm1 rmsnorm w
+263504005	147456	model.blocks.10.blockstack.2.q_proj matmul
+264093879	147456	model.blocks.10.blockstack.2.k_proj matmul
+264683753	147456	model.blocks.10.blockstack.2.v_proj matmul
+265273629	147456	model.blocks.10.blockstack.2.out_proj matmul
+265863507	384	model.blocks.10.blockstack.2.rope_freqs ropefreqs
+265865155	384	model.blocks.10.blockstack.3.norm rmsnorm w
+265866747	442368	model.blocks.10.blockstack.3.ffn_linear1 matmul
+267636279	442368	model.blocks.10.blockstack.3.ffn_linear_gate matmul
+269405807	442368	model.blocks.10.blockstack.3.ffn_linear2 matmul
+271175403	384	model.blocks.10.blockstack.4.norm1 rmsnorm w
+271176989	147456	model.blocks.10.blockstack.4.q_proj matmul
+271766863	147456	model.blocks.10.blockstack.4.k_proj matmul
+272356737	147456	model.blocks.10.blockstack.4.v_proj matmul
+272946613	147456	model.blocks.10.blockstack.4.out_proj matmul
+273536491	384	model.blocks.10.blockstack.4.rope_freqs ropefreqs
+273538139	384	model.blocks.10.blockstack.5.norm rmsnorm w
+273539731	442368	model.blocks.10.blockstack.5.ffn_linear1 matmul
+275309263	442368	model.blocks.10.blockstack.5.ffn_linear_gate matmul
+277078791	442368	model.blocks.10.blockstack.5.ffn_linear2 matmul
+278848317	384	model.blocks.10.normactconvq.norm[0]
+278849859	384	model.blocks.10.normactconvq.norm[1]
+278851401	384	model.blocks.10.normactconvq.norm[2]
+278852943	384	model.blocks.10.normactconvq.norm[3]
+278854584	294912	model.blocks.10.normactconvq.conv conv
+280034274	768	model.norm_trunkfinal[0]
+280037352	768	model.norm_trunkfinal[1]
+280040430	768	model.norm_trunkfinal[2]
+280043508	768	model.norm_trunkfinal[3]
+280046689	73728	model.policy_head.conv1p
+280341647	73728	model.policy_head.conv1g
+280636602	96	model.policy_head.biasg[0]
+280636992	96	model.policy_head.biasg[1]
+280637382	96	model.policy_head.biasg[2]
+280637845	27648	model.policy_head.linear_g
+280748480	96	model.policy_head.bias2[0]
+280748870	96	model.policy_head.bias2[1]
+280749260	96	model.policy_head.bias2[2]
+280749727	192	model.policy_head.conv2p
+280750538	27648	model.policy_head.linear_pass
+280861174	96	model.policy_head.linear_pass_bias
+280861643	192	model.policy_head.linear_pass2
+280862479	147456	model.value_head.conv1
+281452346	192	model.value_head.bias1[0]
+281453120	192	model.value_head.bias1[1]
+281453894	192	model.value_head.bias1[2]
+281454739	110592	model.value_head.linear2
+281897140	192	model.value_head.bias2
+281897992	576	model.value_head.linear_valuehead
+281900336	3	model.value_head.bias_valuehead
+281900398	1152	model.value_head.linear_miscvaluehead
+281905050	6	model.value_head.bias_miscvaluehead
+281905126	192	model.value_head.conv_ownership
